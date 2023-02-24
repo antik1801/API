@@ -13,9 +13,10 @@ function displayPost(posts){
     for (const post of posts) {
      
        const div = document.createElement('div');
+       div.classList.add('bg-blue-200','rounded-xl','mb-5','p-4','mr-4')
        div.innerHTML = `
-       <h4>User-id: ${post.userId}</h4>
-       <h5>Post: ${post.title}</h5>
+       <h3 class='font-bold'>User-id: ${post.userId}</h3>
+       <h5 class='font-semibold'>Post: ${post.title}</h5>
        <p>Post-description: ${post.body}</p>
        `
        postContainer.appendChild(div); 
